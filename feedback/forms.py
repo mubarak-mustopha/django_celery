@@ -14,8 +14,8 @@ class FeedbackForm(forms.Form):
         sleep(20)
         send_mail(
                 "Your Feedback",
-                f"\t{self.cleaned['message']}\n\nThank you!",
+                f"\t{self.cleaned_data['message']}\n\nThank you!",
                 settings.EMAIL_HOST_USER,
-                [self.cleaned["email"]],
+                [self.cleaned_data["email"]],
                 fail_silently=False,
         )
