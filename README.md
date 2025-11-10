@@ -1,2 +1,3 @@
 # django_celery
-Use celery as a task queue in a django project with redis as both message broker and result backend
+Run background processes using celery as a task queue with redis as both 
+ a message broker and a result backend
